@@ -40,4 +40,4 @@ metaDataFormat = "yaml"
   # .Site.Params.disableAssetsBusting
   # .Site.Params.themeVariant
   # landingPageURL = "de"
-  # landingPageName =
+  # landingPageName = "hello"
