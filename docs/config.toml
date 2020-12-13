@@ -1,4 +1,6 @@
-baseURL = "/"
+baseURL = "https://jadujoel.github.io/klotter/"
+publishDir = "docs"
+
 languageCode = "en-US"
 defaultContentLanguage = "en"
 title = "Kenneth Lööf"
