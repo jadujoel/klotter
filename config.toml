@@ -39,5 +39,5 @@ metaDataFormat = "yaml"
   # disableAssetsBusting
   # .Site.Params.disableAssetsBusting
   # .Site.Params.themeVariant
-  landingPageURL = "/start"
+  landingPageURL = baseURL
   # landingPageName = "hello"
