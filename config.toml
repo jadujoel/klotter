@@ -1,4 +1,4 @@
-baseURL = "https://jadujoel.github.io/klotter/"
+baseURL = "https://klotter.xyz/"
 publishDir = "docs"
 
 languageCode = "en-US"
@@ -39,5 +39,5 @@ metaDataFormat = "yaml"
   # disableAssetsBusting
   # .Site.Params.disableAssetsBusting
   # .Site.Params.themeVariant
-  landingPageURL = "https://jadujoel.github.io/klotter/"
+  landingPageURL = "https://klotter.xyz/"
   # landingPageName = "hello"
