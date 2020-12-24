@@ -28,7 +28,9 @@
     --MENU-SECTION-HR-color:                 #ffffff; /* Color of <hr> separator in menu */
     --TOGGLE-SPAN-BORDER:                    #DAD8D8; /* The little line to the right of "open sidebar" */
 
-    --MENU-SECTIONS-FONT: "Noto Serif TC";
+    /*--MENU-SECTIONS-FONT: "Noto Serif TC";*/
+    /*https://fonts.google.com/specimen/Abril+Fatface*/
+    --MENU-SECTIONS-FONT: "Abril Fatface";
 
     --MENU_font_size: 18px;
     --MENU-SECTIONS-FONT-WEIGHT: medium;
@@ -265,7 +267,7 @@ td {
 
 /* FONTS */
 h1 {
-    font-family: "Noto Serif TC", serif;
+    font-family: var(--MENU-SECTIONS-FONT), serif;
     font-size: var(--H1_font_size);
     font-weight: 400;
     font-style: normal;
@@ -279,7 +281,7 @@ h1 {
 }
 
 h2, h3, h4, h5, h6 {
-    font-family: "Noto Serif TC";
+    font-family: var(--MENU-SECTIONS-FONT);
     font-size: var(--H2_font_size);
     font-weight: 600;
     line-height: 1.2;
@@ -290,7 +292,7 @@ h2, h3, h4, h5, h6 {
 }
 
 body {
-    font-family: "Noto Serif TC";
+    font-family: var(--MENU-SECTIONS-FONT);
     font-weight: 100;
     font-size: 14pt;
     color: #48484F;
