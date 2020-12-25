@@ -1,0 +1,337 @@
+@charset "UTF-8";
+/* Collapsed sidebar: https://www.w3schools.com/howto/howto_js_collapse_sidebar.asp */
+
+:root{ /* Custom Theme */
+
+    --MAIN-TEXT-color:                       #000000; /* Color of text by default */
+    --MAIN-BACKGROUND-color:                 #ffffff; /* Color of text by default */
+    --MAIN-TITLES-TEXT-color:                #000000; /* Color of titles h2-h3-h4-h5 */
+    --MAIN-LINK-color:                       #000000; /* Color of links */
+    --MAIN-LINK-HOVER-color:                 #B000FF; /* Color of hovered links */
+    --MAIN-ANCHOR-color:                     #7426ed; /* color of anchors on titles */
+
+    --MENU-HEADER-BG-color:                  #ffffff; /* Background color of menu header */
+    --MENU-HEADER-BORDER-color:              #ffffff; /* Color of menu header border */
+
+    --MENU-SEARCH-BG-color:                  #ffffff; /* Search field background color (by default borders + icons) */
+    --MENU-SEARCH-BOX-color:                 #ffffff; /* Override search field border color */
+    --MENU-SEARCH-BOX-ICONS-color:           #ffffff; /* Override search field icons color */
+
+    --MENU-SECTIONS-ACTIVE-BG-color:         #ffffff; /* Background color of the active section and its childs */
+    --MENU-SECTIONS-BG-color:                #FFFFFF; /* Background color of other sections */
+    --MENU-SECTIONS-LINK-color:              #000000; /* Color of links in menu */
+    --MENU-SECTIONS-LINK-HOVER-color:        #858587;  /* Color of links in menu, when hovered */
+    --MENU-SECTION-ACTIVE-CATEGORY-color:    #7314FF; /* Color of active category text */
+    --MENU-SECTION-ACTIVE-CATEGORY-BG-color: #fff; /* Color of background for the active category (only) */
+
+    --MENU-VISITED-color:                    #030304; /* Color of 'page visited' */
+    --MENU-SECTION-HR-color:                 #ffffff; /* Color of <hr> separator in menu */
+    --TOGGLE-SPAN-BORDER:                    #DAD8D8; /* The little line to the right of "open sidebar" */
+
+    /*--MENU-SECTIONS-FONT: "Noto Serif TC";*/
+    /*https://fonts.google.com/specimen/Abril+Fatface*/
+    --MENU-SECTIONS-FONT: "Abril Fatface";
+
+    --MENU_font_size: 18px;
+    --MENU-SECTIONS-FONT-WEIGHT: medium;
+
+    /*--SIDEBAR-WIDTH: 125px; /* Default: 230px */
+    --SIDEBAR-WIDTH: 200px; /* Default: 230px */
+
+    --OVERLAY_SMALL-WINDOW_SIDEBAR-ACTIVE: 250, 250, 250, 0.30; /* RGBA */
+
+    /*.sidebar-hidden #overlay*/
+    /*--SMALL: 50;*/
+    /*--LARGE: 100;*/
+
+    --H1_font_size: 48px;
+    --H2_font_size: 24px;
+
+    --H1_font_color: #000000;
+}
+
+/*
+While em is relative to the font-size of its direct or nearest parent,
+rem is only relative to the html (root) font-size.
+
+em = percent based on parent
+rem = percent based on root
+
+*/
+
+
+/********************** LINKS *************************************/
+a {
+    color: var(--MAIN-LINK-color);
+    text-decoration: none; /* Don't add underscores... */
+}
+a:hover { color: var(--MAIN-LINK-HOVER-color); }
+
+
+/********************** BODY *************************************/
+#body {
+    margin-left: var(--SIDEBAR-WIDTH);
+    width: 732px; /*Controls main content width when full window*/
+
+}
+
+#body .padding {
+    padding: 64px;
+}
+
+/********************** SIDEBAR *************************************/
+
+/* Formats the sidebar, and makes it not take the top space */
+#sidebar {
+    background-color: var(--MENU-SECTIONS-BG-color);
+    width: var(--SIDEBAR-WIDTH);
+    font-size: 0px;     /* Makes sure no padding from top, doesnt affect menu items */
+    position: fixed;    /* keep sidebar in place when scrolling */
+    /*top: 54px;*/          /*distance from top of page - will mean where logo starts */
+    top: 3rem;          /*distance from top of page - will mean where logo starts */
+    height: 100%;
+
+    overflow-x: hidden; /*hide text if it's to long*/
+    overflow-y: scroll; /*create scroll if menu items dont fit in height*/
+
+}
+
+/* The wrapper for the logo */
+#sidebar #header-wrapper {
+    background: var(--MENU-HEADER-BG-color);
+    display: block;
+    height: 8rem;
+}
+
+#logo {
+    /*display: inline;*/
+    /*width: 64px;*/
+    /*height: 64px;*/
+}
+
+/* Formats the content of the sidebar links = items + logo */
+#sidebar a {
+    width: var(--SIDEBAR-WIDTH);
+    color: var(--MENU-SECTIONS-LINK-color);
+
+    font-family: var(--MENU-SECTIONS-FONT);
+    font-size: var(--MENU_font_size);
+    /*font-weight: var(--MENU-SECTIONS-FONT-WEIGHT);*/
+    font-weight: 500;
+    font-style: normal;
+
+    line-height: 2;
+    letter-spacing: 0px;
+    text-align: left;
+    /*margin-right: 64px;*/
+    padding-left: 64px; /* Pad all elements in sidebar */
+    /*padding: 64px;*/ /* Pad all elements in sidebar */
+    /*hello*/
+    /*width: 183px;*/
+    /*height: 32px;*/
+    /*overflow: hidden;*/ /*The overflow property specifies what should happen if content overflows an element's box.*/
+    overflow: hidden; /*The overflow property specifies what should happen if content overflows an element's box.*/
+    /*color: #7314ff;*/
+}
+
+#sidebar a:visited { color: var(--MENU-VISITED-color); }
+#sidebar a:hover { color: var(--MENU-SECTIONS-LINK-HOVER-color); }
+
+/* Unordered list*/
+#sidebar ul {
+    /*text-align: left;*/
+    list-style: none; /*Hides list-dots*/
+    padding: 0; /*Make sure menu items dont pad more than logo*/
+    margin: 0; /*Removes margin to logo above*/
+    overflow: scroll;
+}
+
+/* Active Item */
+#sidebar ul li.active > a {
+    color: var(--MENU-SECTION-ACTIVE-CATEGORY-color);
+}
+
+/* Hides non-active topics subtopics */
+#sidebar ul.topics ul {
+    display: none;
+}
+
+/* Shows subtopic for active topic*/
+#sidebar ul.topics li.parent ul, #sidebar ul.topics > li.active ul {
+    display: block;
+    padding: 0; /* Dont indent subtopic so much */
+    text-indent: 1rem; /* Indent a little bit */
+}
+
+
+
+/* Sidebar toggle three-lines link */
+#sidebar-toggle-span {
+  display: none; /* Hides toggle span when sidebar active*/
+  /*border-right: thin solid var(--TOGGLE-SPAN-BORDER) !important;*/
+  /*border-right: thin solid var(--TOGGLE-SPAN-BORDER) !important;*/ /* The little line to the right of the tree lines... */
+
+}
+
+/********************** RESIZING *************************************/
+
+/* WINDOW L */
+@media only all and (min-width: 60em) and (max-width: 80em) {
+    #body { width: 40rem; }
+}
+
+/* WINDOW M */
+@media only all and (min-width: 50em) and (max-width: 60em) {
+    #body { width: 30rem; }
+}
+
+
+/* WINDOW S */
+@media only all and (max-width: 50em) {
+    #body {
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    /*Hides the sidebar */
+    #sidebar {
+        display: hidden;
+        left: -2048px;
+    }
+    .sidebar-hidden {
+        overflow: hidden;
+    }
+    .sidebar-hidden #sidebar {
+        left: 0;
+    }
+
+    .sidebar-hidden #body {
+        /*left: 0px;*/
+        margin-left: var(--SIDEBAR-WIDTH);
+        overflow: hidden;
+    }
+    .sidebar-hidden #overlay {
+        position: absolute;
+        width: 0px;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 10;
+        background: rgba(var(--OVERLAY_SMALL-WINDOW_SIDEBAR-ACTIVE));
+        cursor: pointer;
+    }
+
+
+    /* makes sure the three lines are  displayed */
+    #sidebar-toggle-span {
+        display: block; /* if "inline" shows the grey sideline*/
+    }
+}
+
+/* /SIZES */
+
+
+/********************** ANIMATIONS *************************************/
+.default-animation,
+#header #logo-svg,
+#header #logo-svg path,
+#sidebar,
+#sidebar ul,
+#body,
+#body .padding,
+#body .nav {
+    -webkit-transition: all 0.001s ease;
+    -moz-transition: all 0.001s ease;
+    transition: all 0.001s ease;
+}
+
+/********************** MARKDOWN *************************************/
+
+/* Markdown Table */
+table {
+    border: 1px solid #eaeaea;
+    table-layout: auto;
+}
+/* Table Header */
+th {
+    background: #f7f7f7;
+    padding: 0.5rem;
+}
+/* Table Body */
+td {
+    background: #f7f7f7;
+    padding: 0.5rem;
+    border: 1px solid #eaeaea;
+}
+
+/* FONTS */
+h1 {
+    font-family: var(--MENU-SECTIONS-FONT), serif;
+    font-size: var(--H1_font_size);
+    font-weight: 400;
+    font-style: normal;
+
+    text-align: left;
+    text-transform: none;
+    /*letter-spacing: 0px;*/
+    line-height: 1;
+
+    color: var(--H1_font_color);
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: var(--MENU-SECTIONS-FONT);
+    font-size: var(--H2_font_size);
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: left;
+    color: var(--MAIN-TITLES-TEXT-color);
+    /*text-rendering: optimizeLegibility;*/
+    /*letter-spacing: -1px;*/
+}
+
+body {
+    font-family: var(--MENU-SECTIONS-FONT);
+    font-weight: 100;
+    font-size: 14pt;
+    color: #48484F;
+    line-height: 1.6;
+}
+
+hr {
+    border-bottom: 4px solid #F0F2F4;
+}
+
+
+/* Code */
+code, kbd, pre, samp {
+    font-family: "Consolas", menlo, monospace;
+    font-size: 92%;
+}
+code {
+    border-radius: 2px;
+    white-space: nowrap;
+    color: #5e5e5e;
+    background: #FFF7DD;
+    border: 1px solid #fbf0cb;
+    padding: 0px 2px;
+}
+pre {
+    padding: 1rem;
+    margin: 2rem 0;
+    background: #282c34;
+    border: 0;
+    border-radius: 2px;
+    line-height: 1.15;
+}
+pre code {
+    color: whitesmoke;
+    background: inherit;
+    white-space: inherit;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+}
+
