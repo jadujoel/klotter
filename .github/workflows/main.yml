@@ -26,6 +26,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: release
+          publish_branch: release # work pls
           publish_dir: ./docs
           destination_dir: ./docs
