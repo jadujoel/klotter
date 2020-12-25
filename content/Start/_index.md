@@ -12,5 +12,5 @@ med specialskrivna arrangemang.
 
 {{< skicka_forfrogan >}}
 
-Testar igen
+
 <!-- [![Skicka Förfrågan](skicka-forfrogan.png)](mailto:kenneth@klotter.com) -->
