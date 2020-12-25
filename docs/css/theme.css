@@ -18,22 +18,24 @@
     --MENU-SEARCH-BOX-ICONS-color:           #ffffff; /* Override search field icons color */
 
     --MENU-SECTIONS-ACTIVE-BG-color:         #ffffff; /* Background color of the active section and its childs */
-    --MENU-SECTIONS-BG-color:                #FFFFFF; /* Background color of other sections */
+    --MENU-SECTIONS-BG-color:                #ffffff; /* Background color of other sections */
     --MENU-SECTIONS-LINK-color:              #000000; /* Color of links in menu */
     --MENU-SECTIONS-LINK-HOVER-color:        #858587;  /* Color of links in menu, when hovered */
     --MENU-SECTION-ACTIVE-CATEGORY-color:    #7314FF; /* Color of active category text */
-    --MENU-SECTION-ACTIVE-CATEGORY-BG-color: #fff; /* Color of background for the active category (only) */
+    --MENU-SECTION-ACTIVE-CATEGORY-BG-color: #ffffff; /* Color of background for the active category (only) */
 
     --MENU-VISITED-color:                    #030304; /* Color of 'page visited' */
     --MENU-SECTION-HR-color:                 #ffffff; /* Color of <hr> separator in menu */
-    --TOGGLE-SPAN-BORDER:                    #DAD8D8; /* The little line to the right of "open sidebar" */
+    /*--TOGGLE-SPAN-BORDER:                    #DAD8D8;*/ /* The little line to the right of "open sidebar" */
+    --TOGGLE-SPAN-BORDER:                    #ffffff; /* The little line to the right of "open sidebar" */
 
-    /*--MENU-SECTIONS-FONT: "Noto Serif TC";*/
+    /*--FONT-MAIN: "Noto Serif TC";*/
     /*https://fonts.google.com/specimen/Abril+Fatface*/
-    --MENU-SECTIONS-FONT: "Abril Fatface";
+    --FONT-MAIN: "Abril Fatface";
+    --FONT-OTHER: "Raleway";
 
     --MENU_font_size: 18px;
-    --MENU-SECTIONS-FONT-WEIGHT: medium;
+    --FONT-MAIN-WEIGHT: medium;
 
     /*--SIDEBAR-WIDTH: 125px; /* Default: 230px */
     --SIDEBAR-WIDTH: 200px; /* Default: 230px */
@@ -114,9 +116,9 @@ a:hover { color: var(--MAIN-LINK-HOVER-color); }
     width: var(--SIDEBAR-WIDTH);
     color: var(--MENU-SECTIONS-LINK-color);
 
-    font-family: var(--MENU-SECTIONS-FONT);
+    font-family: var(--FONT-MAIN);
     font-size: var(--MENU_font_size);
-    /*font-weight: var(--MENU-SECTIONS-FONT-WEIGHT);*/
+    /*font-weight: var(--FONT-MAIN-WEIGHT);*/
     font-weight: 500;
     font-style: normal;
 
@@ -267,7 +269,7 @@ td {
 
 /* FONTS */
 h1 {
-    font-family: var(--MENU-SECTIONS-FONT), serif;
+    font-family: var(--FONT-MAIN), serif;
     font-size: var(--H1_font_size);
     font-weight: 400;
     font-style: normal;
@@ -281,7 +283,7 @@ h1 {
 }
 
 h2, h3, h4, h5, h6 {
-    font-family: var(--MENU-SECTIONS-FONT);
+    font-family: var(--FONT-MAIN);
     font-size: var(--H2_font_size);
     font-weight: 600;
     line-height: 1.2;
@@ -292,7 +294,7 @@ h2, h3, h4, h5, h6 {
 }
 
 body {
-    font-family: var(--MENU-SECTIONS-FONT);
+    font-family: var(--FONT-MAIN);
     font-weight: 100;
     font-size: 14pt;
     color: #48484F;
@@ -300,7 +302,8 @@ body {
 }
 
 hr {
-    border-bottom: 4px solid #F0F2F4;
+    /*border-bottom: 4px solid #F0F2F4;*/
+    border-bottom: 4px solid #ffffff;
 }
 
 
@@ -326,7 +329,7 @@ pre {
     line-height: 1.15;
 }
 pre code {
-    color: whitesmoke;
+    color: #ffffff
     background: inherit;
     white-space: inherit;
     border: 0;

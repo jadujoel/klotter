@@ -1,5 +1,5 @@
 cd /Users/admin/Dropbox/workspace/kenneth/klotter;
-hugo --clean destinationDir;
+hugo --cleanDestinationDir;
 hugo;
 git add .;
 git commit -m "update";
