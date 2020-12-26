@@ -4,11 +4,7 @@ date: 2020-11-12T00:40:52+01:00
 draft: false
 ---
 
-{{< bild src="omMig.jpeg" width="300" >}}
-
- <!-- width="420" class="hej"  -->
-
-<!-- <img src="omMig.jpeg" alt="drawing" width="200"/> -->
+{{< bild src="omMig.jpeg" >}}
 
 ## Om mig
 
