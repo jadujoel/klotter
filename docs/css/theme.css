@@ -37,7 +37,8 @@
     --backgroundColorSidebar: #FFFFFFFF; /* Background color of menu header */
     --backgroundColorBody:    #FFFFFFFF; /* Background color of menu header */
 
-    --sidebarOverlayColor: 250, 250, 250, 0.30; /* RGBA */
+    /*--sidebarOverlayColor: 250, 250, 250, 0.30;*/
+    --sidebarOverlayColor: 193, 18, 246, 1.00; /* RGBA */
 
     --sidebarWidth: 200px; /* Default: 230px */
 
@@ -46,6 +47,8 @@
 
 html {
     background: var(--backgroundColorMain);
+    background-color: var(--backgroundColorMain);
+    color: var(--backgroundColorMain);
 }
 
 /*
@@ -70,12 +73,21 @@ a:hover { color: var(--fontColorMainLinkHover); }
 #body {
     margin-left: var(--sidebarWidth);
     background-color: var(--backgroundColorBody);
+    color: var(--fontColorBody);
+    border-color: #EA000D; /* Trying to make grey dissapear */
+
     width: 732px; /*Controls main content width when full window*/
 
 }
 
 #body .padding {
     padding: 64px;
+    background-color: var(--backgroundColorBody);
+
+    /*color: var(--fontColorBody);  Trying to make grey dissapear */
+    border-color: #EA000D; /* Trying to make grey dissapear */
+
+
 }
 
 /********************** SIDEBAR *************************************/
@@ -83,6 +95,9 @@ a:hover { color: var(--fontColorMainLinkHover); }
 /* Formats the sidebar, and makes it not take the top space */
 #sidebar {
     background-color: var(--backgroundColorSidebar);
+    color: var(--backgroundColorSidebar); /* Trying to make grey dissapear */
+    border-color: #EA000D; /* Trying to make grey dissapear */
+
     width: var(--sidebarWidth);
     font-size: 0px;     /* Makes sure no padding from top, doesnt affect menu items */
     position: fixed;    /* keep sidebar in place when scrolling */
@@ -98,12 +113,20 @@ a:hover { color: var(--fontColorMainLinkHover); }
 /* The wrapper for the logo */
 #sidebar #header-wrapper {
     background-color: var(--backgroundColorSidebar);
+    color: var(--backgroundColorSidebar); /* Trying to make grey dissapear */
+    border-color: #EA000D; /* Trying to make grey dissapear */
+
+
     display: block;
     height: 8rem;
 }
 
 #logo {
     background-color: var(--backgroundColorSidebar);
+    color: var(--backgroundColorSidebar); /* Trying to make grey dissapear */
+    border-color: #EA000D; /* Trying to make grey dissapear */
+
+
     /*display: inline;*/
     /*width: 64px;*/
     /*height: 64px;*/
@@ -114,9 +137,10 @@ a:hover { color: var(--fontColorMainLinkHover); }
     background-color: var(--backgroundColorSidebar);
     width: var(--sidebarWidth);
     color: var(--fontColorSidebar);
+    border-color: #EA000D; /* Trying to make grey dissapear */
 
     font-family: var(--fontSidebar);
-    font-size: var(--fontSizeSidebar);
+    font-size:   var(--fontSizeSidebar);
     font-weight: var(--fontWeightSidebar); /*500;*/
     font-style: normal;
 
