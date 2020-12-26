@@ -90,6 +90,11 @@ a:hover { color: var(--fontColorMainLinkHover); }
 
 }
 
+#body .padding .highlightable{
+    background-color: var(--backgroundColorBody);
+    border-color: #EA000D;
+}
+
 /********************** SIDEBAR *************************************/
 
 /* Formats the sidebar, and makes it not take the top space */
