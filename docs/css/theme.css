@@ -72,16 +72,18 @@ figure {
     margin-block-end: 1.5em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+
     /*width: 4px !important;*/
     /*height: 4px !important;*/
     /*scale: 0.1;*/
 }
 
-figure #hej {
-    /*width: 4px !important;*/
+figure > img{
+  width:100%;
+  min-height:100%;
 }
 
-
+/*
 #bild {
     background-attachment: fixed;
     background-color: #FB210DFF !important;
@@ -90,7 +92,7 @@ figure #hej {
     padding: 400px !important;
 
 }
-
+*/
 /********************** BODY *************************************/
 #body {
     margin-left: var(--sidebarWidth);
