@@ -111,7 +111,8 @@ a:hover { color: var(--fontColorMainLinkHover); }
     height: 100%;
 
     overflow-x: hidden; /*hide text if it's to long*/
-    /*overflow-y: scroll;*/ /*create scroll if menu items dont fit in height*/
+    overflow-y: hidden; /*create scroll if menu items dont fit in height*/
+    overflow: hidden; /*create scroll if menu items dont fit in height*/
 
 }
 
@@ -172,7 +173,7 @@ a:hover { color: var(--fontColorMainLinkHover); }
     list-style: none; /*Hides list-dots*/
     padding: 0; /*Make sure menu items dont pad more than logo*/
     margin: 0; /*Removes margin to logo above*/
-    /*overflow: scroll;*/
+    overflow: hidden; /*scroll*/
 }
 
 /* Active Item */
