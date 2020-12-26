@@ -3,34 +3,31 @@
 
 :root{ /* Custom Theme */
 
-
-    /*--FONT-MAIN: "Noto Serif TC";*/
-    /*https://fonts.google.com/specimen/Abril+Fatface*/
-    /*--FONT-MAIN: "Abril Fatface";*/
-
-    --fontHeader: "Abril Fatface";
+    /*--fontHeader: "Abril Fatface";*/
+    --fontHeader: "Raleway";
     --fontBody: "Raleway";
     --fontSidebar: "Raleway";
 
-    --fontSizeSidebar: 18px;
+    --fontSizeSidebar: 16px;
     --fontSizeH1: 48px;
-    --fontSizeH2: 24px;
+    --fontSizeH2: 28px;
     --fontSizeBody: 14pt;
 
     --fontWeightSidebar: 500;
     --fontWeightH1: 400;
-    --fontWeightH2: 600;
+    --fontWeightH2: 800;
     --fontWeightBody: 100;
 
-    --fontColorH1:      #000000;
-    --fontColorH2:      #000000; /* Color of titles h2-h3-h4-h5 */
+    --fontColorH1:      #2B0047;
+    --fontColorH2:      #2B0047; /* Color of titles h2-h3-h4-h5 */
     --fontColorBody:    #48484F; /* Color of text by default */
 
-    --fontColorSidebar:   #2b0047;  /* Color of links in menu */
+    --fontColorSidebar:   #2B0047;  /* Color of links in menu  */
+    --fontColorSidebarActive:   #B000FF;  /* Color of links in menu */
     --fontColorLinkHover: #858587;  /* Color of links in menu, when hovered */
     --fontVisitedColor:   #030304; /* Color of 'page visited' */
 
-    --fontColorMainLink:      #000000; /* Color of links */
+    --fontColorMainLink:      #B000FF; /* Color of links */
     --fontColorMainLinkHover: #B000FF; /* Color of hovered links */
 
     --backgroundColorMain:    #FFFFFFFF;
@@ -41,6 +38,8 @@
     --sidebarOverlayColor: 193, 18, 246, 0.50; /* RGBA */
 
     --sidebarWidth: 200px; /* Default: 230px */
+
+    /*#B000FF*/
 
 
 }
@@ -68,31 +67,52 @@ a {
 }
 a:hover { color: var(--fontColorMainLinkHover); }
 
+figure {
+    margin-block-start: 1.5em;
+    margin-block-end: 1.5em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    /*width: 4px !important;*/
+    /*height: 4px !important;*/
+    /*scale: 0.1;*/
+}
+
+figure #hej {
+    /*width: 4px !important;*/
+}
+
+
+#bild {
+    background-attachment: fixed;
+    background-color: #FB210DFF !important;
+    width: 1px !important;
+    padding: 400px !important;
+    padding: 400px !important;
+
+}
 
 /********************** BODY *************************************/
 #body {
     margin-left: var(--sidebarWidth);
     background-color: var(--backgroundColorBody);
     color: var(--fontColorBody);
-    border-color: #EA000D; /* Trying to make grey dissapear */
+    line-height: 1.5;
 
-    width: 732px; /*Controls main content width when full window*/
+    width: 30em; /*Controls main content width when full window 732px;*/
 
 }
 
 #body .padding {
-    padding: 64px;
+    padding: 12px;
     background-color: var(--backgroundColorBody);
 
     /*color: var(--fontColorBody);  Trying to make grey dissapear */
-    border-color: #EA000D; /* Trying to make grey dissapear */
 
 
 }
 
 #body .padding .highlightable{
     background-color: var(--backgroundColorBody);
-    border-color: #EA000D;
 }
 
 /********************** SIDEBAR *************************************/
@@ -100,8 +120,7 @@ a:hover { color: var(--fontColorMainLinkHover); }
 /* Formats the sidebar, and makes it not take the top space */
 #sidebar {
     background-color: var(--backgroundColorSidebar);
-    color: var(--backgroundColorSidebar); /* Trying to make grey dissapear */
-    border-color: #EA000D; /* Trying to make grey dissapear */
+    color: var(--fontColorSidebar); /* Trying to make grey dissapear */
 
     width: var(--sidebarWidth);
     font-size: 0px;     /* Makes sure no padding from top, doesnt affect menu items */
@@ -119,9 +138,7 @@ a:hover { color: var(--fontColorMainLinkHover); }
 /* The wrapper for the logo */
 #sidebar #header-wrapper {
     background-color: var(--backgroundColorSidebar);
-    color: var(--backgroundColorSidebar); /* Trying to make grey dissapear */
-    border-color: #EA000D; /* Trying to make grey dissapear */
-
+    color: var(--fontColorSidebar); /* Trying to make grey dissapear */
 
     display: block;
     height: 8rem;
@@ -130,8 +147,6 @@ a:hover { color: var(--fontColorMainLinkHover); }
 #logo {
     background-color: var(--backgroundColorSidebar);
     color: var(--backgroundColorSidebar); /* Trying to make grey dissapear */
-    border-color: #EA000D; /* Trying to make grey dissapear */
-
 
     /*display: inline;*/
     /*width: 64px;*/
@@ -143,7 +158,6 @@ a:hover { color: var(--fontColorMainLinkHover); }
     background-color: var(--backgroundColorSidebar);
     width: var(--sidebarWidth);
     color: var(--fontColorSidebar);
-    border-color: #EA000D; /* Trying to make grey dissapear */
 
     font-family: var(--fontSidebar);
     font-size:   var(--fontSizeSidebar);
@@ -154,7 +168,7 @@ a:hover { color: var(--fontColorMainLinkHover); }
     letter-spacing: 0px;
     text-align: left;
     /*margin-right: 64px;*/
-    padding-left: 64px; /* Pad all elements in sidebar */
+    padding-left: 32px; /* Pad all elements in sidebar */
     /*padding: 64px;*/ /* Pad all elements in sidebar */
     /*hello*/
     /*width: 183px;*/
@@ -178,7 +192,7 @@ a:hover { color: var(--fontColorMainLinkHover); }
 
 /* Active Item */
 #sidebar ul li.active > a {
-    color: var(--fontColorSidebar);
+    color: var(--fontColorSidebarActive);
 }
 
 /* Hides non-active topics subtopics */

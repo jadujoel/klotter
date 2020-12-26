@@ -6,9 +6,8 @@ draft: false
 
 ## Kontakt
 
-Klotter drivs av Kenneth Lööf som har över 30 års erfarenhet
-av musikpedagogik, notskrivning och och arrangering för orkester.
-Han hjälper er med specialskrivna arrangemang.
+Skicka ett e-postmedelande med en förfrågan så kan vi diskutera en lösning.
+Alla frågor och idéer är välkomna, stort som smått.
 
 {{< epost >}}
 
