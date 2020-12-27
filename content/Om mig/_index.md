@@ -17,7 +17,3 @@ Min skola "Tvärflöjt - första och andra spelboken" finns utgivna liksom "Julv
 Arbetar nu med specialskriva arrangemang och musik för ensembler och orkestrar på alla nivåer. Stor erfarenhet av udda instrumentkombinationer och att ta fram det bästa från varje sektion och stämma.
 
 Jag kan även hjälpa till med renskrivning av handskrivna noter eller justera stämmor för en instrumentalist som behöver det lättare eller svårare.
-
-...
-
-<!-- {{< audio src="nuStiger.mp3" title="Nu Stiger" >}} -->
