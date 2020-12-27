@@ -12,9 +12,7 @@ draft: false
 {{< rawhtml >}} Hej ja e håtemmel {{</ rawhtml >}}
 
 ## Notskrivning & Arrangering
-Klotter drivs av Kenneth Lööf som har över 30 års erfarenhet av
-notskrivning till orkester. Han hjälper er
-med specialskrivna arrangemang.
+Klotter drivs av mig, Kenneth Lööf, som har mångårig erfarenhet av notskrivning och arrangering för orkester och blandade ensembler. Jag hjälper er med specialskrivna arrangemang för er ensemble. Eller renskrivning av handskrivna noter t.ex.
 
 
 {{< skicka_forfrogan >}}
