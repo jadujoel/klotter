@@ -451,3 +451,10 @@ jQuery.fn.highlight = function(words, options) {
         jQuery.highlight(this, re, settings.element, settings.className);
     });
 };
+
+
+
+// $('a.launchlightbox').click(function(){
+//     $("a.lightboxgallery").first().lightBox();
+//     return false;
+// });
