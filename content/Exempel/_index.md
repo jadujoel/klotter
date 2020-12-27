@@ -6,10 +6,10 @@ draft: false
 
 
 {{< imageLightboxGallery >}}
-Här finns Lite exempel på arrangemang jag gjort.
-Fint!
+Här är några exempel på arrangemang i olika stilar och för olika ensembler som jag skrivit.
 
-Ljud:
+
+Ljud: Nu Stiger
 
 {{< audioPlus src="nuStiger.mp3" type="mp3" title="Nu Stiger" artist="Kenneth" width="2000" >}}
 
