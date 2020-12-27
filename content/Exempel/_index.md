@@ -6,15 +6,19 @@ draft: false
 
 Här är några exempel på arrangemang i olika stilar och för olika ensembler som jag skrivit.
 
-Här gjorde Andreas Weise i sammarbete med Trollhättan ett framförande där jag stod för arrangemanget.
-{{< youtube id="EW1Qrky6Bo4" autoplay="true" >}}
+{{< youtube id="EW1Qrky6Bo4" >}}
+Här gjorde Andreas Weise i sammarbete med Trollhättan Stad ett framförande där jag stod för arrangemanget.
 
-Såhär kan noterna man får se ut:
+---
+
+Såhär kan noterna man får efter en beställning se ut:
 {{< gallery >}}
+
+---
 
 Och såhär kan det låta efter inspelning:
 
-{{< audioPlus src="nuStiger.mp3" type="mp3" title="Nu Stiger" artist="Kenneth" width="2000" >}}
+{{< audio src="nuStiger.mp3" >}}
 
 
 
