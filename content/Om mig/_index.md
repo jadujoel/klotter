@@ -6,10 +6,6 @@ draft: false
 
 {{< bild src="omMig.jpeg" >}}
 
-{{< audio src="nuStiger.mp3" >}}
-
-
-
 ## Om mig
 
 Mitt namn är Kenneth Lööf och jag har en examen från Stockholms musikpedagogiska institut och har studerat arrangering vid Kungliga Musikhögskolan i Stockholm.
@@ -23,3 +19,5 @@ Arbetar nu med specialskriva arrangemang och musik för ensembler och orkestrar 
 Jag kan även hjälpa till med renskrivning av handskrivna noter eller justera stämmor för en instrumentalist som behöver det lättare eller svårare.
 
 ...
+
+<!-- {{< audio src="nuStiger.mp3" title="Nu Stiger" >}} -->

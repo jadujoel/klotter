@@ -50,6 +50,9 @@ html {
     color: var(--backgroundColorMain);
 }
 
+
+
+
 /*
 While em is relative to the font-size of its direct or nearest parent,
 rem is only relative to the html (root) font-size.
@@ -84,6 +87,55 @@ figure > img{
 }
 
 /*
+img {
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+#gallery {
+    width: 20%;
+    display: inline-flex;
+}
+*/
+
+/*
+div #gallery {
+    width: 1px;
+    height: 1px;
+    min-height: 1px;
+    display: inline-flex;
+}
+
+div #gallery > a {
+    width: 1px;
+    height: 1px;
+}
+*/
+/*
+div {
+    width: 1%;
+    min-height: 1%;
+}
+
+
+div #gallery a {
+    width: 1%;
+    height: 1%;
+    min-height: 1%;
+}
+
+#gallery a {
+    width: 10%;
+}
+
+a {
+    width: 10%;
+}
+
+*/
+/*
+
 #bild {
     background-attachment: fixed;
     background-color: #FB210DFF !important;
