@@ -5,7 +5,7 @@ draft: false
 ---
 
 ## Notskrivning & Arrangering
-Klotter drivs av mig, Kenneth Lööf, som har mångårig erfarenhet av notskrivning och arrangering för orkester och blandade ensembler. Jag hjälper er med specialskrivna arrangemang för er ensemble. Eller renskrivning av handskrivna noter t.ex.
+Klotter drivs av mig, Kenneth Lööf, som har mångårig erfarenhet av notskrivning och arrangering för orkester och blandade ensembler i olika svårighetsgrad. Jag hjälper dig med specialskrivna arrangemang för den besättning du har, renskrivning av handskrivna noter eller att notera din egen musik.
 
 
 {{< skicka_forfrogan >}}
