@@ -18,7 +18,14 @@ Såhär kan noterna man får efter en beställning se ut:
 
 Och såhär kan det låta efter inspelning:
 
+Nu Stiger:
+
 {{< audio src="nuStiger.mp3" >}}
+
+Rentrée Clarinet Quartet:
+
+{{< audio src="rentreeClarinetQuartet.mp3" >}}
+
 
 
 
