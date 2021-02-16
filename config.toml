@@ -7,6 +7,7 @@ title = "Kenneth Lööf"
 theme = "hugo-theme-learn"
 themesdir = "themes"
 metaDataFormat = "yaml"
+googleAnalytics = "G-DGMS5REL9R"
 
 [params]
   author = "Joel Löf"
