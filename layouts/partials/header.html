@@ -13,7 +13,18 @@
   {{ hugo.Generator }}
   {{ partial "meta.html" . }}
   {{ partial "favicon.html" . }}
-  {{ template "_internal/google_analytics.html" . }}
+
+  <!-- {{ template "_internal/google_analytics.html" . }} -->
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T34SDQWJBN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-T34SDQWJBN');
+  </script>
 
   <title>{{ .Title }} {{ default "::" .Site.Params.titleSeparator }} {{ .Site.Title }}</title>
 
