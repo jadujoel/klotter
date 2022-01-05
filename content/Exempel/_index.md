@@ -9,7 +9,8 @@ Här är några exempel på arrangemang i olika stilar och för olika ensembler 
 
 {{< youtube id="EW1Qrky6Bo4" >}}
 Här gjorde Andreas Weise i sammarbete med Trollhättan Stad ett framförande där jag stod för arrangemanget.
-
+{{< youtube id="EnRfTBVgjXI" >}}
+Och här ett julkort från Orust kommun.
 ---
 
 Såhär kan noterna man får efter en beställning se ut:
